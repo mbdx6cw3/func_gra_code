@@ -1,0 +1,36 @@
+&input_deck
+
+! number of atoms in the graphene sheet
+n_atm       = 1972
+
+! names of files containing functional group coordinates
+func_name   = 'carboxylic.gro' 'hydroxyl.gro' 'epoxide.gro' 'hydrogen.gro'
+
+! total oxygen content - plane only (weight percent)
+O_wp        = 30.0
+
+! number of carboxyl groups to add to the edge
+max_carboxy  = 0
+
+! probability of hydroxyl plane functionalisation (probability of epoxide functionalisation = 1 - plane_rat) 
+plane_rat   = 0.60
+
+! fraction of deprotonated carboxylic acids (1.0 = all deprotonated)
+edge_dp     = 1.00
+
+! fraction of deprotonated hydroxyl groups (1.0 = all deprotonated)
+plane_dp    = 0.0
+
+! maximum number of atoms after functionalisation
+max_n_gro   = 10000
+
+! switch to allow for a periodic graphene sheet (Y) in two dimensions (no edge functionalisation)
+periodic    = .false.
+
+! switch to do disordered/homogeneous or semiordered/patchy oxidation
+patchy      = .false.
+
+! the number of oxidized carbons in a single patch before switching to a new random site
+max_patch   = 1
+
+/

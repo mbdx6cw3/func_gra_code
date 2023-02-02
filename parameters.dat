@@ -1,0 +1,57 @@
+9 # number of atoms types and their masses, simulation name, sigma (nm) and epsilon (kJ/mol)
+12.011 0.355005 0.29288      # 1. CG2R61 - CA - aromatic carbon 
+12.011 0.356359 0.13389      # 2. CG301  - CH - carbon with hydroxyl attached
+12.011 0.358141 0.23430      # 3. CG3C31 - CE - carbon with epoxide oxygen attached
+12.011 0.302906 0.41003      # 4. CG202  - CC - carbon with carboxylic acid attached
+15.999 0.314487 0.80375      # 5. OG311  - OH - oxygen in hydroxyl group
+15.999 0.293997 0.41840      # 6. OG3C31 - OE - oxygen in epoxide group
+15.999 0.302906 0.50208      # 7. OG2D1  - OC - oxygen in carboxylic acid
+1.0080 0.242003 0.12552      # 8. HGR61  - HA - aromatic hydrogen
+1.0080 0.040001 0.19246      # 9. HGP1   - HO - hydroxyl hydrogen
+
+12 # number of bond types (req (nm), kr (kJ/mol/nm^2))
+0.13750 255224.00                     # 1.  CA - CA
+0.14900 192464.00                     # 2.  CA - CH/CE
+0.14800 212547.20                     # 3.  CA - CC 
+0.10800 284512.00                     # 4.  CA - HA 
+0.15000 186188.00                     # 5.  CH - CH  
+0.15000 230120.00                     # 6.  CH - CE
+0.14200 358150.40                     # 7.  CH - OH
+0.15010 200832.00                     # 8.  CE - CE 
+0.14500 184096.00                     # 9.  CE - OE
+0.12200 627600.00                     # 10. CC - OC 
+0.14000 192464.00                     # 11. CC - OH 
+0.09600 456056.00                     # 12. OH - HO
+
+17 # number of angle types (thetaeq (deg.), ktheta (kJ/mol/rad^2), rub (nm) kub (kJ/mol/nm^2))
+120.000 334.72000 0.24162 29288.00    # 1.  CA - CA - CA
+120.000 383.25440 0.00000 0.000000    # 2.  CA - CA - CH / CE
+120.000 376.56000 0.00000 0.000000    # 3.  CA - CA - CC
+120.000 251.04000 0.21525 18409.60    # 4.  CA - CA - HA
+110.100 221.75200 0.21790 18853.10    # 5.  CH/CE - CA - HA
+107.500 433.46240 0.00000 0.000000    # 6.  CA - CH - CH / CE / CA
+110.100 633.45760 0.00000 0.000000    # 7.  CA - CH - OH
+111.500 376.56000 0.00000 0.000000    # 8.  CH/CE - CH - OH
+113.600 488.27280 0.25610 9338.690    # 9.  CH/CE - CH - CH/CE
+103.000 251.04000 0.00000 0.000000    # 10. CE - CE - OE
+103.000 251.04000 0.00000 0.000000    # 11. CA/CH - CE - OE
+123.100 585.76000 0.24420 16736.00    # 12. CA - CC - OC
+113.900 334.72000 0.23700 25104.00    # 13. CA - CC - OH
+123.000 418.40000 0.22620 175728.0    # 14. OC - CC - OH
+106.000 418.40000 0.00000 0.000000    # 15. CH - OH - HO
+115.000 460.24000 0.00000 0.000000    # 16. CC - OH - HO
+97.0000 421.32880 0.00000 0.000000    # 17. CE - OE - CE
+
+11 # number of dihedral types (CA - aromatic carbon, C - nonaromatic carbon)
+180.000000    12.970400     2         # 1.  CH/CA/CC/CE - CA - CA - CH/CA/CC/CE
+180.000000    17.572800     2         # 2.  CH/CA/CC/CE - CA - CA - HA
+180.000000    10.041600     2         # 3.  HA - CA - CA - HA
+180.000000     0.167360     3         # 4.  CA - CA - CH  - CA/CH/CE/CC
+180.000000     4.288600     2         # 5.  CH/CA/CE - CA - CC - OC
+0.00000000     0.836800     3         # 6.  CA/CH/OH - CH - CH - CA/CH/OH
+180.000000     1.966480     1         # 7.  CA/CH - CA/CH - CE - OE
+0.00000000     2.092000     1         # 8.  HA - CA - CE - OE
+180.000000     0.460240     6         # 9.  CA/CH/CE - CE - CE - OE
+0.00000000     4.727920     1         # 10.  CH/CA - CH - OH - HO
+180.000000     8.577200     2         # 11.  CA/OC - CC - OH - HO 
+
